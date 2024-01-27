@@ -1,0 +1,64 @@
+[debug] [2023-08-01T11:23:14.056Z] ----------------------------------------------------------------------
+[debug] [2023-08-01T11:23:14.059Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-01T11:23:14.059Z] CLI Version:   12.4.0
+[debug] [2023-08-01T11:23:14.060Z] Platform:      win32
+[debug] [2023-08-01T11:23:14.060Z] Node Version:  v16.14.2
+[debug] [2023-08-01T11:23:14.061Z] Time:          Tue Aug 01 2023 16:23:14 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-08-01T11:23:14.061Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-01T11:23:14.238Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-01T11:23:14.239Z] > authorizing via signed-in user (aqib_siddique@nextpak.org)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\NextPak\4mil-process
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-01T11:24:02.002Z] Using project from CLI flag: the-4mil-process
+[debug] [2023-08-01T11:24:02.006Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/the-4mil-process [none]
+[debug] [2023-08-01T11:24:02.668Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/the-4mil-process 200
+[debug] [2023-08-01T11:24:02.669Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/the-4mil-process {"projectId":"the-4mil-process","projectNumber":"896095943857","displayName":"the-4mil-process","name":"projects/the-4mil-process","resources":{"hostingSite":"the-4mil-process"},"state":"ACTIVE","etag":"1_ad73ea4c-4310-42ca-addf-fa9e9a7d6915"}
+[info] i  Using project the-4mil-process (the-4mil-process) 
+[info] 
+=== Functions Setup
+[debug] [2023-08-01T11:24:02.681Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-01T11:24:02.682Z] > authorizing via signed-in user (aqib_siddique@nextpak.org)
+[debug] [2023-08-01T11:24:02.682Z] [iam] checking project the-4mil-process for permissions ["firebase.projects.get"]
+[debug] [2023-08-01T11:24:02.683Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-4mil-process:testIamPermissions [none]
+[debug] [2023-08-01T11:24:02.683Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-4mil-process:testIamPermissions x-goog-quota-user=projects/the-4mil-process
+[debug] [2023-08-01T11:24:02.683Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-4mil-process:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-01T11:24:04.401Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-4mil-process:testIamPermissions 200
+[debug] [2023-08-01T11:24:04.401Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/the-4mil-process:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-01T11:24:04.402Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/the-4mil-process/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-08-01T11:24:04.402Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/the-4mil-process/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/the-4mil-process
+[debug] [2023-08-01T11:24:04.403Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/the-4mil-process/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-08-01T11:24:04.403Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/the-4mil-process/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/the-4mil-process
+[debug] [2023-08-01T11:24:06.318Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/the-4mil-process/services/runtimeconfig.googleapis.com 200
+[debug] [2023-08-01T11:24:06.318Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/the-4mil-process/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-08-01T11:24:06.322Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/the-4mil-process/services/cloudfunctions.googleapis.com 200
+[debug] [2023-08-01T11:24:06.322Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/the-4mil-process/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] 
+Overwriting codebase default...
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 

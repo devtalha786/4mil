@@ -1,0 +1,63 @@
+.builder {
+    p,
+    li {
+        font-size: 14px;
+    }
+    &__progressbar {
+        height: 5px !important;
+    }
+    &__input {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        border: none;
+        height: 50px;
+    }
+
+    &__employment {
+        &-link {
+            color: #38a169;
+        }
+    }
+
+    &__leftCol {
+        h4 {
+            @media (max-width: 575px) {
+                font-size: 19px !important;
+            }
+        }
+        height: 100vh;
+        overflow: auto;
+        max-height: 100vh;
+        &::-webkit-scrollbar {
+            width: 5px;
+            background-color: #bbe3ce;
+        }
+    }
+    &__rightCol {
+        position: sticky;
+        top: 0;
+
+        p,
+        li {
+            @media (max-width: 575px) {
+                font-size: 12px !important;
+            }
+        }
+
+        &-h4 {
+            @media (max-width: 575px) {
+                font-size: 15px !important;
+            }
+        }
+    }
+    &__print-btn-desktop{
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    &__print-btn-mobile{
+        @media (min-width: 767px) {
+            display: none;
+        }
+    }
+}
